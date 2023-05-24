@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+
+    margin: 0px;
+    padding:0px;
+    text-decoration: none;
+    box-sizing:inherit;
+    font-family:'Poppins', sans-serif;
+
+}
+
+body{
+    
+    background: silver;
+    font-family:monospace;  
+    background-repeat:repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+
+nav{
+    background-image: url("it6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80px;
+    width: 100%;
+}
+
+nav ul{
+    float:right;
+    margin-right: 20px;
+
+}
+
+nav ul li
+{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:black;
+    background-color: rgba(255, 228, 196, 0.664);
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.act ,a:hover{
+    background: #1b9fff;
+    transition:.5s;
+}
+
+.checkb1{
+    font-size:30%;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right: 40px;
+    cursor: pointer;
+  
+}
+header .logo{
+    height: auto;   
+    margin-left: 70px;
+    width: 80px;
+    
+}
+.checkb1{
+    font-size: 30px;
+    color:white ;
+    float:80px ;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+
+  display:none;
+}
+
+@media(max-width: 952px){
+    header .rhmc{
+    
+    padding-left:50px;
+ }
+ nav ul li a{
+    font-size:16px ;
+ }
+}
+@media(max-width: 858px){
+    .checkb1{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height:100vh ;
+        left:-100%;
+        background: black;
+        top:80px;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li  {
+        display: block;
+        margin:50px -0 ;
+
+
+}
+    nav ul li  a{
+        font-size: 20px;
+    }
+
+         a:hover,a .act{
+            background: none;
+            color: #0082e6;
+         }
+    #check:checked~ ul{
+        left:0
+
+    }
+
+}
+
+
+
+
+/*appoint*/
+
+
+h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:black;
+    text-align: center; 
+    text-decoration:none;
+  }
+  
+  table{
+    font-family: Calibri; 
+    color: black;
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: bold;
+    text-align:left; 
+    background:none;
+   
+     
+  }
+  table.inner{
+    border: 0px
+  }
+  
+  .center{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  

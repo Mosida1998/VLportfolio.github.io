@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+
+    margin: 0px;
+    padding:0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+
+body{
+    
+   
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat:repeat;
+    background-size:cover;
+    font-family: montserarrt;  
+    
+}
+
+nav{
+    background-image: url("it6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80px;
+    width: 100%;
+}
+
+nav ul{
+    float:right;
+    margin-right: 20px;
+
+}
+
+nav ul li
+{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:black;
+    background-color: rgba(255, 228, 196, 0.664);
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.act ,a:hover{
+    background: #1b9fff;
+    transition:.5s;
+}
+
+.checkb1{
+    font-size:30%;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right: 40px;
+    cursor: pointer;
+  
+}
+header .logo{
+    height: auto;   
+    margin-left: 70px;
+    width: 80px;
+    
+}
+.checkb1{
+    font-size: 30px;
+    color:white ;
+    float:80px ;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+
+  display:none;
+}
+
+@media(max-width: 952px){
+    header .rhmc{
+    
+    padding-left:50px;
+ }
+ nav ul li a{
+    font-size:16px ;
+ }
+}
+@media(max-width: 858px){
+    .checkb1{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height:100vh ;
+        left:-100%;
+        background: black;
+        top:80px;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li  {
+        display: block;
+        margin:50px -0 ;
+
+
+}
+    nav ul li  a{
+        font-size: 20px;
+    }
+
+         a:hover,a .act{
+            background: none;
+            color: #0082e6;
+         }
+    #check:checked~ ul{
+        left:0
+
+    }
+
+}
+
+/*about*/
+.section{
+    
+    width: 100%;
+    min-height: 100vh;
+  
+
+}
+
+.container{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:50px;
+}
+
+.content-section{
+    float:left;
+    width:55%;
+}
+
+.title h1{
+
+    font-size: 70px;
+    font-weight: bolder;
+    color: chartreuse;
+    flex-direction: column-reverse;
+
+
+}
+.content p{
+    color:rgb(255, 81, 0);
+    font-size: 20px;
+   font-weight:lighter;
+   
+}
+
+/*skill/language*/
+.skill{
+    
+    position: absolute;
+  margin: auto;
+    font-family: monospace;
+    font-weight: bold;
+    color:rgb(255, 81, 0);
+}
+
+.skill h1{
+   color: chartreuse;
+   font-size: 32px;
+}
+.langu h1{
+    color: chartreuse;
+    font-size: 32px;
+}
+.langu{
+    font-weight: bold;
+    text-align:right;
+    color:rgb(255, 81, 0);
+   
+    
+
+   
+}
+
+/*img*/
+
+.image-section{
+    float:right;
+    width:40%;
+
+}
+.image-section img{
+    width:100%;
+    height: auto;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+
+.content-section .content h3{
+    margin-top: 20px;
+    color:rgb(137, 243, 15);
+    font-size: 23px;
+
+
+}
+
+.content-section .content p{
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.content-section .content .button {
+   margin-top: 30px;
+
+
+}
+
+.content-section .content .button a{
+    background-color: #F28B0C;
+    padding:12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size:15px;
+    letter-spacing: 1.5px;
+
+}
+
+.content-section .content .button a:hover{
+    background-color:gray;
+   color:#F28B0C;
+
+
+}
+
+.content-section .social{
+    margin:40px 40px; 
+}
+
+.content-section .social i{
+    color:#65fae6;
+    font-size:30px ;
+    padding:0px 10px;
+
+}
+
+.content-section .social i:hover{
+    color:#F28B0C ;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:80%;
+        display:block;
+        margin:auto;
+        padding-top:50px;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display:block;
+        margin: auto; 
+     }
+
+     .image-section{
+        float:none;
+        width:100%;
+        display:block;
+        margin: auto; 
+       
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+
+    }
+
+    .content-section .content .button a{
+        padding:9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
+
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+
+    }
+
+
+}
+
+
+
+
+
+
